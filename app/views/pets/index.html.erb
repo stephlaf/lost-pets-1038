@@ -1,0 +1,7 @@
+<h1>Our <%= @pets.count %> lost pets 🐱🐶🦖</h1>
+
+<ul>
+  <% @pets.each do |pet| %>
+    <li><%= link_to pet.name.capitalize, pet_path(pet) %></li>
+  <% end %>
+</ul>

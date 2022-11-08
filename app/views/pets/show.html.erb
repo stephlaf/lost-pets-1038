@@ -1,0 +1,5 @@
+<h1>Is <%= @pet.name.capitalize %> the <%= @pet.species %> yours?</h1>
+<h4>It was found at <%= @pet.address %>, <%= @pet.found_days_ago %> days ago </h4>
+
+<p><%= link_to 'Edit this Pet', edit_pet_path(@pet) %></p>
+<p><%= link_to 'Back to All Pets', pets_path %></p>
